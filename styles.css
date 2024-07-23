@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff0080;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff8c00;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#showcase{
+    display:flex;
+
+}
+h2{
+    padding-left:60px;
+    padding-top:40px;
+    font-size:40px;
+}
+
+#showcase .product {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#productreview{
+    display:flex;
+
+}
+#productreview .product1 {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    text-align: center;
+
+    padding: 10px;
+    
+  
+}
+
+
+#productreview .product1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+
+
+#showcase .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#showcase .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#testimonials blockquote {
+    background: #f4f4f4;
+    border-left: 10px solid #ff8c00;
+    margin: 10px 0;
+    padding: 10px 20px;
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+    position: relative;
+}
+
+#testimonials blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #ff8c00;
+}
+
+#testimonials blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    color: #ff8c00;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 5px 0;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form button {
+    padding: 10px;
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background: #ff0080;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #ff0080;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff8c00;
+}
+.container{
+    position:relative;
+}
+.container .wrapper{
+  
+    height:55vh;
+    box-shadow:10px 10px 10px rgba(0,0,0,0);
+    margin:5rem auto;
+    overflow:hidden;
+}
+.container .wrapper-holder{
+    display:grid;
+    grid-template-columns:repeat(5,100%);
+    height:100%;
+    width:100%;
+  
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    animation:slider 30s ease-in-out infinite alternate;
+
+}
+ #slider-img-1{
+    background-image:url("Bridal1.jpg");
+  
+}
+.slider-img {
+    margin-left: 10%;
+    height: 55vh;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+ #slider-img-2{
+    background-image:url("Casual1.jpg");
+  
+}
+ #slider-img-3{
+    background-image:url("Festive1.jpg");
+
+}
+ #slider-img-4{
+    background-image:url("Formal1.jpg");
+   
+}
+ #slider-img-5{
+    background-image:url("Wedding1.jpg");
+  
+}
+.container .button-holder .button{
+    background-color:white;
+    width:15px;
+    height:15px;
+    border-radius:15px;
+    display:inline-block;
+    margin:.3rem;
+
+}
+.container .button-holder{
+    position:absolute;
+    left:45%;
+    bottom:0%;
+
+}
+.button:hover{
+    box-shadow:0px 0px 7px 4px rgba(0,255,255,0.6)
+
+}
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    16.67% { transform: translateX(0%); } /* Display the first image for 16.67% of the time */
+    20% { transform: translateX(-100%); }
+    36.67% { transform: translateX(-100%); } /* Display the second image for 16.67% of the time */
+    40% { transform: translateX(-200%); }
+    56.67% { transform: translateX(-200%); } /* Display the third image for 16.67% of the time */
+    60% { transform: translateX(-300%); }
+    76.67% { transform: translateX(-300%); } /* Display the fourth image for 16.67% of the time */
+    80% { transform: translateX(-400%); }
+    96.67% { transform: translateX(-400%); } /* Display the fifth image for 16.67% of the time */
+    100% { transform: translateX(0%); } 
+}
+#p1{
+    margin-left:150%;
+    width:90%;
+    margin-top:70px;
+}
+#h1{
+    margin-left:150%;
+    width:90%;
+    
+    
+}
+
+
+
+
